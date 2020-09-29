@@ -8,7 +8,7 @@ const App = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (value) => {
-    setTodos([value, ...todos]);
+    setTodos([...todos, value]);
     setText('');
   };
 
